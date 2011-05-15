@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQMORPG Demo</title>
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+        google.load("jquery", "1.4.1");
+    </script>
+    <script src="js/jquery.json-2.2.js"></script>
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.hotkeys-0.7.9.min.js"></script>
+    <script type="text/javascript" src="js/jqmorpg.js"></script>
+    <meta name="viewport" content="width=340; user-scalable=yes; /" />
+	<style type="text/css">
+		.tooltip {
+		}
+		
+		.tooltip {
+		    border: solid 2px white;
+		    -moz-border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    border-radius: 4px;
+		    background-color: black;
+		    text-decoration: none;
+		    padding: 3px 5px;
+		    zoom: 1;
+		    -webkit-transition-property: opacity;
+		    -webkit-transition-duration: 1s;
+		    -webkit-transition-timing-function: ease-in-out;
+		    z-index: 9999;
+		}
+		
+		.tooltip .tooltipAngle {
+		    border-right: solid 10px transparent;
+		    border-left-width: 0;
+		    border-top: solid 10px white;
+		    line-height: 0;
+		    position: absolute;
+		    left: 1em;
+		    bottom: -10px;
+		}
+		
+		.tooltip .tooltipAngle .tooltipAngleInner {
+		    border-right: solid 5px transparent;
+		    border-left-width: 0;
+		    border-top: solid 5px black;
+		    line-height: 0;
+		    position: absolute;
+		    left: 2px;
+		    bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+<div id="everything">
+<div id="jqrpg_wrapper">
+	<div id="jqrpg_preloader">
+		<span class="sprites face_u">@</span>		
+		<span class="sprites face_d">@</span>
+		<span class="sprites face_l">@</span>
+		<span class="sprites face_r">@</span>
+	</div>
+
+	<div id="jqrpg_screen">
+		<!--<span id="jqrpg_player">@</span>-->
+		<div id="jqrpg_map">
+		<span>This should be replaced by jQuery.</span>
+		</div><!-- end #jqrpg_map -->
+	</div><!-- end #jqrpg_screen -->
+
+	<div id="message">
+	</div>
+</div><!-- end #jqrpg_wrapper -->
+
+<div id="controll_box" style="display:none;">
+    <div id="box1">
+        <form>
+        <input type="button" value="↑" name="up" /><br />
+        <input type="button" value="←" name="left" /><input type="button" value="→" name="right" /><br />
+        <input type="button" value="↓" name="down" />
+        </form>
+    </div>
+    <div id="box2">
+        <form>
+        <input type="button" value="Chat" name="chat" /><br />
+        <br />
+        <input type="button" value="Logout" name="logout" />
+        </form>
+    </div>
+</div>
+
+<div id="login_box">
+    <form>
+    <input type="hidden" value="" name="name" />
+    <input type="button" value="Login" name="login" />
+    </form>
+</div>
+
+</div><!-- end #everything -->
+
+</body>
+</html>
