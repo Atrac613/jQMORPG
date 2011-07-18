@@ -209,7 +209,8 @@ $(function() {
 	            this.ws.close();
 	        }
 	        
-	        this.ws = new WebSocket("ws://" + location.host + ":8000/" + resource);
+	        //this.ws = new WebSocket("ws://" + location.host + ":8000/" + resource);
+	        this.ws = new WebSocket("ws://ws.atrac613.io:8000/" + resource);
 	        var that = this;
 	
 	        this.ws.onopen = function(e) {
